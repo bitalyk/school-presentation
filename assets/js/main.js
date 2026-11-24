@@ -35,12 +35,6 @@
     return tipuri[ext] || "Link";
   }
 
-  function formatData(s) {
-    const d = new Date(s + "T00:00:00");
-    if (isNaN(d)) return s;
-    return d.toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" });
-  }
-
   function card(p) {
     const link = (p.link || "").trim();
     const c = el(link ? "a" : "div", "prez" + (link ? "" : " prez-pregatire"));
@@ -54,7 +48,6 @@
     c.appendChild(el("span", "prez-tip", link ? tip(link) : "În pregătire"));
     c.appendChild(el("span", "prez-titlu", p.titlu || "Fără titlu"));
     if (p.descriere) c.appendChild(el("span", "prez-desc", p.descriere));
-    if (p.data) c.appendChild(el("span", "prez-data", formatData(p.data)));
     return c;
   }
 
