@@ -10,7 +10,7 @@
 
   const LATIME = 1600;
   const INALTIME = 900;
-  const SANS = "system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, sans-serif";
+  const SANS = "'Fizica Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, sans-serif";
   const SERIF = "'Cambria Math', 'STIX Two Math', 'Latin Modern Math', 'Times New Roman', 'DejaVu Serif', serif";
 
   const body = document.body;
@@ -105,14 +105,29 @@
 
   // ---------- scalare și animații ----------
 
+  // Un strat invizibil cât tot ecranul: măsurăm ce se vede de fapt, nu window.innerWidth,
+  // care poate minți când sistemul are textul mărit (ex. 118 %) sau în ecran complet.
+  const masura = document.createElement("div");
+  masura.setAttribute("aria-hidden", "true");
+  masura.style.cssText = "position:fixed;inset:0;visibility:hidden;pointer-events:none";
+  body.appendChild(masura);
+
+  let ultimaFereastra = "";
   function potriveste() {
-    scara = Math.min(window.innerWidth / LATIME, window.innerHeight / INALTIME);
+    stage.style.setProperty("--s", 1);
+    const s = stage.getBoundingClientRect();
+    const v = masura.getBoundingClientRect();
+    if (!s.width || !v.width) return;
+    scara = Math.min(v.width / s.width, v.height / s.height);
     stage.style.setProperty("--s", scara);
+    ultimaFereastra = v.width + "x" + v.height;
     anims.forEach(dimensiune);
   }
 
   function dimensiune(a) {
-    a.k = scara * (window.devicePixelRatio || 1);
+    // pixeli reali pe ecran pentru un pixel de slide (ține cont și de zoom-ul ascuns)
+    const lat = a.canvas.getBoundingClientRect().width;
+    a.k = (lat > 0 ? lat / a.w : scara) * (window.devicePixelRatio || 1);
     a.canvas.width = Math.max(1, Math.round(a.w * a.k));
     a.canvas.height = Math.max(1, Math.round(a.h * a.k));
   }
@@ -155,6 +170,13 @@
   }
 
   window.addEventListener("resize", potriveste);
+  document.addEventListener("fullscreenchange", potriveste);
+  if (window.ResizeObserver) new ResizeObserver(potriveste).observe(masura);
+  // plasă de siguranță: verificăm de două ori pe secundă dacă s-a schimbat fereastra
+  setInterval(function () {
+    const v = masura.getBoundingClientRect();
+    if (v.width + "x" + v.height !== ultimaFereastra) potriveste();
+  }, 500);
   potriveste();
   const dinAdresa = parseInt(location.hash.slice(1), 10);
   mergiLa(dinAdresa >= 1 ? dinAdresa - 1 : 0);
