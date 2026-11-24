@@ -135,6 +135,62 @@ sub { font-size: 0.6em; line-height: 0; }
 
 .retine b { color: var(--warm); }
 
+.retine.definitie::before { content: "Definiție"; }
+
+/* relația de proporționalitate scoasă în evidență: Δt ∼ Q */
+.relatie {
+  display: inline-block;
+  margin-left: 0.3em;
+  font-family: var(--serif);
+  font-size: 1.25em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Δ și alte simboluri drepte, în fontul formulelor */
+.d { font-family: var(--serif); font-style: normal; }
+
+/* fracție: <span class="frac"><span>numărător</span><span>numitor</span></span> */
+.frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.12em;
+  font-size: 0.8em;
+  line-height: 1.12;
+  vertical-align: middle;
+}
+
+.frac > span + span {
+  align-self: stretch;
+  padding: 0 0.2em;
+  border-top: 0.07em solid currentColor;
+  text-align: center;
+}
+
+.formula { position: relative; }
+
+.formula .nr {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--sans);
+  font-size: 24px;
+  color: var(--muted);
+}
+
+/* pașii unui experiment */
+.pasi { margin: 0; padding-left: 1.1em; }
+.pasi li + li { margin-top: 6px; }
+.pasi li::marker { color: var(--warm); }
+
+/* slide de laborator: text îngust în stânga, simularea mare în dreapta */
+.lab .coloane { grid-template-columns: 560px 1fr; gap: 40px; }
+.lab .col-text { gap: 18px; font-size: 23px; }
+.lab .retine { margin-top: 12px; padding: 22px 26px 18px; font-size: 24px; }
+.lab .concluzie { font-size: 23px; }
+
 .idee { margin-top: 22px !important; }
 
 .notatie {
@@ -400,3 +456,5 @@ sub { font-size: 0.6em; line-height: 0; }
   background: var(--warm);
   transition: width 0.3s ease;
 }
+.coloane.sus { margin-top: 20px; }
+.notatie.unitate { margin-top: 16px; align-self: flex-start; padding: 10px 24px; font-size: 26px; }

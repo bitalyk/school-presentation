@@ -25,6 +25,13 @@ window.PREZENTARI = {
       link: "prezentari/clasa-8/2-1-structura-substantei/index.html",
       data: "2026-11-24"
     },
+    {
+      titlu: "2.2. Căldura specifică. Capacitatea termică",
+      capitol: "Capitolul 2. Fenomene termice",
+      descriere: "Trei experimente: Δt depinde de căldura primită, de masă și de substanță; căldura specifică, formula Q = c·m·Δt, capacitatea termică C = c·m.",
+      link: "prezentari/clasa-8/2-2-caldura-specifica/index.html",
+      data: "2026-11-24"
+    },
   ],
   "9": [],
   "10": [],
