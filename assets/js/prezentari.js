@@ -17,7 +17,15 @@
   Fără „link”, prezentarea apare ca „În pregătire”.
 */
 window.PREZENTARI = {
-  "8": [],
+  "8": [
+    {
+      titlu: "2.1. Structura substanței. Mișcarea moleculelor. Echilibrul termic",
+      capitol: "Capitolul 2. Fenomene termice",
+      descriere: "Starea termică și temperatura, echilibrul termic și procesul termic, scările de temperatură, încălzirea și răcirea, energia internă, cantitatea de căldură.",
+      link: "prezentari/clasa-8/2-1-structura-substantei/index.html",
+      data: "2026-11-24"
+    },
+  ],
   "9": [],
   "10": [],
 };

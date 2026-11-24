@@ -33,6 +33,22 @@ prezentari/clasa-N/     fișierele prezentărilor (PDF, PowerPoint, HTML …)
 
    `capitol`, `descriere` și `data` sunt opționale. `link` poate fi și o adresă web (de ex. Google Slides).
 
+## Prezentările HTML (cu animații)
+
+Fiecare prezentare HTML stă în folderul ei, de ex. `prezentari/clasa-8/2-1-structura-substantei/`
+(`index.html` = slide-urile, `animatii.js` = animațiile). Toate folosesc motorul comun din `assets/deck/`.
+
+În timpul prezentării:
+
+| Tasta | Acțiune |
+|---|---|
+| → · Spațiu · PageDown | slide-ul următor (merge și cu telecomanda de prezentare) |
+| ← · PageUp | slide-ul anterior |
+| F | ecran complet |
+| Home / End | primul / ultimul slide |
+
+Pe telefon sau tabletă: glisează stânga/dreapta.
+
 ## Cum pornești site-ul
 
 - **Cel mai simplu:** dublu-clic pe `index.html` (merge și de pe un stick USB).

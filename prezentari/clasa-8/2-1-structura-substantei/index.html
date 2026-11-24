@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2.1. Structura substanței. Mișcarea moleculelor. Echilibrul termic — Fizică, clasa a 8-a</title>
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../assets/deck/deck.css">
+</head>
+<body data-inapoi="../../../clasa-8/index.html" data-inapoi-text="Clasa a 8-a">
+<main class="stage">
+
+  <!-- 1. Titlu -->
+  <section class="slide titlu" aria-label="Titlu">
+    <div class="banda">
+      <span class="cap">Capitolul</span><span class="cap-nr">2</span><span class="cap-titlu">FENOMENE TERMICE</span>
+    </div>
+    <div class="titlu-text">
+      <p class="tema-nr">Tema 2.1</p>
+      <h1>Structura substanței.<br>Mișcarea moleculelor.<br>Echilibrul termic</h1>
+      <p class="clasa">Fizică · Clasa a 8-a</p>
+    </div>
+    <canvas id="a-titlu" data-w="560" data-h="560" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- 2. Starea termică și temperatura -->
+  <section class="slide">
+    <p class="tema">2.1 · Fenomene termice</p>
+    <h2>Starea termică. Temperatura</h2>
+    <div class="retine">
+      Starea termică a unui corp fizic exprimă <b>starea lui internă</b> și este determinată
+      de mărimea fizică numită <b>temperatură</b>.
+    </div>
+    <p class="idee">
+      Temperatura este legată de <b>mișcarea particulelor</b> din care este alcătuit corpul:
+      cu cât particulele se mișcă <b>mai repede</b>, cu atât temperatura corpului este <b>mai mare</b>.
+    </p>
+    <div class="doua">
+      <figure class="panou cald">
+        <canvas id="a-cald" data-w="660" data-h="270"></canvas>
+        <figcaption><b>Temperatură mai mare</b> — particulele se mișcă repede</figcaption>
+      </figure>
+      <figure class="panou rece">
+        <canvas id="a-rece" data-w="660" data-h="270"></canvas>
+        <figcaption><b>Temperatură mai mică</b> — particulele se mișcă încet</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. Echilibrul termic și procesul termic -->
+  <section class="slide">
+    <p class="tema">2.1 · Fenomene termice</p>
+    <h2>Echilibrul termic și procesul termic</h2>
+    <div class="retine">
+      Mărimea fizică ce caracterizează starea de încălzire a unui corp sau a unui sistem de corpuri
+      fizice aflate în <b>echilibru termic</b> este numită <b>temperatură</b>. Trecerea unui corp fizic
+      dintr-o stare de echilibru termic în alta se numește <b>proces termic</b>.
+    </div>
+    <div class="doua">
+      <figure class="panou">
+        <canvas id="a-proces" data-w="660" data-h="300"></canvas>
+        <figcaption><b class="term">Proces termic</b> — temperatura se schimbă: particulele se mișcă când mai repede, când mai încet</figcaption>
+      </figure>
+      <figure class="panou">
+        <canvas id="a-echilibru" data-w="660" data-h="300"></canvas>
+        <figcaption><b class="term">Echilibru termic</b> — temperatura rămâne aceeași: particulele se mișcă la fel</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. Scări termometrice, kelvinul -->
+  <section class="slide compact">
+    <p class="tema">2.1 · Fenomene termice</p>
+    <h2>Măsurarea temperaturii. Scări termometrice</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div>
+          <p>Există mai multe <b>scări de temperatură</b>:</p>
+          <p class="chips"><span class="chip">Celsius (°C)</span><span class="chip">Kelvin (K)</span><span class="chip">Fahrenheit (°F)</span><span class="chip">Réaumur (°R)</span></p>
+        </div>
+        <ul class="puncte">
+          <li><b>Celsius</b> — cea mai folosită în viața de zi cu zi: 0 °C — topirea gheții, 100 °C — fierberea apei.</li>
+          <li><b>Kelvin</b> — scara absolută: 0 K este <b>zero absolut</b>, când mișcarea termică a moleculelor încetează. 1 K = 1 °C.</li>
+        </ul>
+        <div class="retine">
+          În <b>SI</b> temperatura absolută <i class="m">T</i> se măsoară în <b>kelvini</b>: <span class="si">[<i>T</i>]<sub>SI</sub> = K</span>.
+          Temperatura în grade Celsius se notează cu <i class="m">t</i>.
+        </div>
+        <div class="formula">
+          <i>T</i>(K) = <i>t</i>(°C) + 273,15
+          <span class="nota"><i>t</i>(°C) = <i>T</i>(K) − 273,15 · exemplu: 20 °C = 293,15 K</span>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-scari" data-w="640" data-h="540"></canvas>
+        <div class="control">
+          <label for="t-slider">Temperatura:</label>
+          <input type="range" id="t-slider" min="-273.15" max="100" step="0.01" value="20">
+          <button type="button" class="buton-mic" id="t-auto"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Încălzirea și răcirea -->
+  <section class="slide">
+    <p class="tema">2.1 · Fenomene termice</p>
+    <h2>Încălzirea și răcirea</h2>
+    <div class="doua">
+      <figure class="panou cald">
+        <canvas id="a-incalzire" data-w="660" data-h="360"></canvas>
+        <figcaption>
+          <p class="nume">Încălzirea</p>
+          <p>Corpul primește căldură (de la flacăra spirtierei), iar particulele lui se mișcă tot mai repede.</p>
+          <p class="concl"><span>Concluzie:</span> În procesul <b>de încălzire</b> temperatura corpului se mărește.</p>
+        </figcaption>
+      </figure>
+      <figure class="panou rece">
+        <canvas id="a-racire" data-w="660" data-h="360"></canvas>
+        <figcaption>
+          <p class="nume">Răcirea</p>
+          <p>Corpul cedează căldură mediului înconjurător, iar particulele lui se mișcă tot mai încet.</p>
+          <p class="concl"><span>Concluzie:</span> În procesul <b>de răcire</b> temperatura corpului scade.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6. Energia internă -->
+  <section class="slide">
+    <p class="tema">2.1 · Fenomene termice</p>
+    <h2>Energia internă</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Starea termică a corpului fizic este caracterizată de temperatura acestuia, care este
+          <b>măsura energiei cinetice medii</b> a moleculelor din care-i constituit.
+        </p>
+        <div class="retine">
+          Energia de mișcare și de interacțiune a particulelor din care constă corpul fizic
+          se numește <b>energia internă a corpului</b>.
+        </div>
+        <div class="concluzie">
+          <span class="eticheta">Concluzie:</span>
+          <ul>
+            <li>Energia internă a unui corp, ca și temperatura, este o mărime fizică ce caracterizează starea termică a corpului.</li>
+            <li>Variația energiei interne a unui corp depinde numai de energia lui în starea inițială (<i class="m">U</i><sub>1</sub>) și cea finală (<i class="m">U</i><sub>2</sub>).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-energie" data-w="600" data-h="400"></canvas>
+        <div class="legenda">
+          <span><svg width="44" height="16" aria-hidden="true"><line x1="2" y1="8" x2="32" y2="8" stroke="#1f2430" stroke-width="3" stroke-linecap="round"/><path d="M42 8 L30 2 L30 14 Z" fill="#1f2430"/></svg>energie de mișcare</span>
+          <span><svg width="44" height="16" aria-hidden="true"><line x1="2" y1="8" x2="42" y2="8" stroke="#2a74d6" stroke-width="3" stroke-dasharray="6 6"/></svg>energie de interacțiune</span>
+        </div>
+        <div class="notatie" style="font-size:28px">
+          Energia internă se notează cu litera <i class="m">U</i>. &nbsp; <span class="si">[<i>U</i>]<sub>SI</sub> = J</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Transferul de căldură. Cantitatea de căldură -->
+  <section class="slide">
+    <p class="tema">2.1 · Fenomene termice</p>
+    <h2>Transferul de căldură. Cantitatea de căldură</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div class="retine">
+          Procesul variației energiei interne a unui corp cauzat de primirea sau cedarea căldurii se numește
+          <b>transfer de căldură</b> sau <b>transmitere de căldură</b>. Mărimea fizică ce caracterizează
+          variația energiei interne a corpului în procesul transferului de căldură se numește
+          <b>cantitate de căldură</b>.
+        </div>
+        <p class="notatie">
+          Cantitatea de căldură se notează cu litera <i class="m">Q</i>. Unitatea de măsură în SI este
+          <b>joule</b> (J): &nbsp;<span class="si">[<i>Q</i>]<sub>SI</sub> = J</span>
+        </p>
+        <p>Energia internă a unui corp crește datorită cantității de căldură primite de la alt corp:</p>
+        <div class="formula"><i>U</i><sub>2</sub> − <i>U</i><sub>1</sub> = <i>Q</i></div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-transfer" data-w="640" data-h="470"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../../../assets/deck/deck.js"></script>
+<script src="animatii.js"></script>
+</body>
+</html>

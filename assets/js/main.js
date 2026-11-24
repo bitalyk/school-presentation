@@ -31,7 +31,7 @@
     if (l.includes("docs.google.com/presentation")) return "Google Slides";
     if (l.includes("canva.com")) return "Canva";
     const ext = l.split(/[?#]/)[0].split(".").pop();
-    const tipuri = { pdf: "PDF", pptx: "PowerPoint", ppt: "PowerPoint", odp: "Impress", html: "Web", htm: "Web", mp4: "Video" };
+    const tipuri = { pdf: "PDF", pptx: "PowerPoint", ppt: "PowerPoint", odp: "Impress", html: "Prezentare", htm: "Prezentare", mp4: "Video" };
     return tipuri[ext] || "Link";
   }
 
