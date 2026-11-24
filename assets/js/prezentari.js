@@ -33,6 +33,14 @@ window.PREZENTARI = {
       data: "2026-11-24"
     },
   ],
-  "9": [],
+  "9": [
+    {
+      titlu: "§ 6. Instrumente optice",
+      capitol: "Capitolul 1. Optica geometrică",
+      descriere: "Lupa, aparatul fotografic, microscopul, luneta și aparatul de proiecție — cu desene interactive: trageți de obiect și imaginea se construiește singură.",
+      link: "prezentari/clasa-9/1-6-instrumente-optice/index.html",
+      data: "2026-11-24"
+    },
+  ],
   "10": [],
 };

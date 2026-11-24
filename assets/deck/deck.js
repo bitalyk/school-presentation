@@ -93,7 +93,7 @@
 
   let atingere = null;
   document.addEventListener("touchstart", function (e) {
-    atingere = e.target.closest("input, .bara") ? null : [e.touches[0].clientX, e.touches[0].clientY];
+    atingere = e.target.closest("input, .bara, .interactiv") ? null : [e.touches[0].clientX, e.touches[0].clientY];
   }, { passive: true });
   document.addEventListener("touchend", function (e) {
     if (!atingere) return;

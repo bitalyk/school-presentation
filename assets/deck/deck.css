@@ -458,3 +458,26 @@ sub { font-size: 0.6em; line-height: 0; }
 }
 .coloane.sus { margin-top: 20px; }
 .notatie.unitate { margin-top: 16px; align-self: flex-start; padding: 10px 24px; font-size: 26px; }
+
+/* ---------- desene interactive (obiecte trase cu mouse-ul sau cu degetul) ---------- */
+
+canvas.interactiv { touch-action: none; cursor: default; }
+canvas.interactiv.prinde { cursor: grab; }
+canvas.interactiv.trage { cursor: grabbing; }
+
+/* tema roz (Optica geometrică, clasa a 9-a) */
+body.roz {
+  --warm: #c2257a;
+  --warm-soft: #fbe6f1;
+}
+body.roz .banda { background: linear-gradient(90deg, #a8205f 0%, #e0559c 42%, rgba(251, 226, 240, 0) 88%); }
+
+/* slide cu text la stânga și desen interactiv mare la dreapta */
+.optica .coloane { grid-template-columns: 520px 1fr; gap: 36px; align-items: start; }
+.optica .col-text { gap: 14px; font-size: 22px; line-height: 1.42; }
+.optica .col-text p { margin: 0; }
+.optica .retine { margin-top: 10px; padding: 20px 24px 16px; font-size: 22px; }
+.optica .lista-parti { margin: 0; padding-left: 1.1em; list-style: "– "; }
+.optica .lista-parti li + li { margin-top: 4px; }
+.optica .indiciu { margin: 8px 0 0; font-size: 19px; color: var(--muted); text-align: center; }
+.optica .indiciu b { color: var(--warm); }
