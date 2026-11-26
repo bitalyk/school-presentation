@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1.8. Mișcarea curbilinie — Fizică, clasa a 10-a</title>
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../assets/deck/deck.css">
+</head>
+<body class="rosu" data-inapoi="../../../clasa-10/index.html" data-inapoi-text="Clasa a 10-a">
+<main class="stage">
+
+  <!-- 1. Titlu -->
+  <section class="slide titlu" aria-label="Titlu">
+    <div class="banda">
+      <span class="cap">Capitolul</span><span class="cap-nr">1</span>
+    </div>
+    <div class="titlu-text">
+      <p class="tema-nr">1.8</p>
+      <h1>Mișcarea curbilinie</h1>
+      <p class="clasa">Fizică · Clasa a 10-a</p>
+    </div>
+    <canvas id="a-titlu" data-w="560" data-h="560" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- 2. Mișcarea circulară, viteza momentană (fig. 1.42) -->
+  <section class="slide lectie">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Mișcarea circulară. Viteza momentană</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div class="retine definitie">
+          Prin <i>mișcare circulară</i> a unui mobil se subînțelege mișcarea acestuia pe un cerc.
+        </div>
+        <div class="retine">
+          Pentru orice mișcare curbilinie – viteza momentană a mobilului este tangentă la traiectorie în punctul
+          ocupat de acesta.
+        </div>
+        <div class="retine definitie">
+          Dacă în orice intervale egale de timp mobilul parcurge distanțe egale, mișcarea circulară este uniformă.
+        </div>
+        <div class="retine definitie">
+          Mișcarea mobilului pe un cerc cu viteză constantă în modul este o mișcare circulară uniformă.
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-tangenta" data-w="680" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Formula (1.41): de la vector la modul -->
+  <section class="slide lectie">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Modulul vitezei în mișcarea circulară</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Într-un interval de timp Δ<i class="m">t</i> mobilul trece din <i class="m">M</i><sub>0</sub> în
+          <i class="m">M</i>. Deplasarea lui este coarda <i class="m vec">s</i>, iar viteza medie
+          <i class="m vec">v</i><sub>med</sub> = <i class="m vec">s</i>/Δ<i class="m">t</i> este orientată de-a lungul coardei.
+        </p>
+        <p>
+          Dacă intervalul Δ<i class="m">t</i> este foarte mic, viteza medie devine viteza momentană
+          <i class="m vec">v</i>, tangentă la cerc. Trecem de la vectori la module:
+          <span class="nw"><i class="m">v</i> = |<i class="m vec">s</i>|/Δ<i class="m">t</i></span>.
+        </p>
+        <p>
+          Pentru un interval Δ<i class="m">t</i> foarte mic coarda și arcul practic coincid:
+          lungimea coardei |<i class="m vec">s</i>| este egală cu lungimea arcului <i class="m">l</i> parcurs de mobil.
+        </p>
+        <div class="formula">
+          <i>v</i> = <span class="frac"><span>|<i class="vec">s</i>|</span><span>Δ<i>t</i></span></span> =
+          <span class="frac"><span><i>l</i></span><span>Δ<i>t</i></span></span><span class="nr">(1.41)</span>
+        </div>
+        <p>
+          În mișcarea circulară uniformă arce egale sunt parcurse în intervale egale de timp, de aceea raportul
+          <i class="m">l</i>/Δ<i class="m">t</i> este același pentru orice interval: modulul vitezei este constant.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-coarda" data-w="680" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Perioada și frecvența -->
+  <section class="slide lectie">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Perioada și frecvența de rotație</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div class="retine definitie">
+          Intervalul minim de timp, după care mișcarea mobilului se repetă întocmai, se numește
+          <i>perioadă de rotație T</i> sau <i>perioadă</i>.
+        </div>
+        <p>
+          Notăm cu Δ<i class="m">t</i> intervalul de timp în care mobilul efectuează <i class="m">N</i> rotații complete
+          în jurul centrului cercului, adică parcurge <i class="m">N</i> lungimi ale acesteia. În conformitate cu
+          definiția, perioada de rotație este
+        </p>
+        <div class="formula">
+          <i>T</i> = <span class="frac"><span>Δ<i>t</i></span><span><i>N</i></span></span>.<span class="nr">(1.42)</span>
+        </div>
+        <p>
+          Mărimea egală cu numărul de rotații efectuat într-o unitate de timp este numită
+          <b>frecvență de rotație</b> <i class="m">ν</i>:
+        </p>
+        <div class="formula">
+          <i>ν</i> = <span class="frac"><span><i>N</i></span><span>Δ<i>t</i></span></span>.<span class="nr">(1.43)</span>
+        </div>
+        <p>Între frecvența de rotație și perioadă există relația:</p>
+        <div class="formula">
+          <i>ν</i> = <span class="frac"><span>1</span><span><i>T</i></span></span> și
+          <i>T</i> = <span class="frac"><span>1</span><span><i>ν</i></span></span>.<span class="nr">(1.44)</span>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-perioada" data-w="680" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Viteza mobilului: (1.45), (1.46) -->
+  <section class="slide lectie">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Viteza în mișcarea circulară uniformă</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Cunoașterea razei <i class="m">r</i> a cercului descris de mobil și a perioadei <i class="m">T</i> permite să
+          se calculeze viteza mobilului. Într-o perioadă mobilul parcurge o distanță egală cu lungimea cercului
+          <i class="m">l</i> = 2π<i class="m">r</i>, deci viteza lui
+        </p>
+        <div class="formula">
+          <i>v</i> = <span class="frac"><span><i>l</i></span><span><i>T</i></span></span> =
+          <span class="frac"><span>2π<i>r</i></span><span><i>T</i></span></span>.<span class="nr">(1.45)</span>
+        </div>
+        <p>Ținând seama de relația (1.44), pentru viteză putem scrie</p>
+        <div class="formula"><i>v</i> = 2π<i>νr</i>.<span class="nr">(1.46)</span></div>
+        <div class="retine">
+          Vitezele punctelor rigidului sunt cu atât mai mari, cu cât ele se află la distanțe mai mari de axa de rotație.
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-disc" data-w="680" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Accelerația centripetă (fig. 1.43) -->
+  <section class="slide lectie compact-text">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Accelerația centripetă</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Modulul vitezei rămâne același, dar direcția ei se schimbă (fig. 1.43). Triunghiul vitezelor
+          <i class="m vec">v</i><sub>0</sub>, <i class="m vec">v</i>, Δ<i class="m vec">v</i> este asemenea cu triunghiul
+          <i class="m">M</i><sub>0</sub><i class="m">OM</i>, deci |Δ<i class="m vec">v</i>|/<i class="m">v</i> =
+          |<i class="m vec">s</i>|/<i class="m">r</i>, unde |<i class="m vec">s</i>| = <i class="m">v</i>Δ<i class="m">t</i>.
+          De aici exprimăm modulul accelerației:
+        </p>
+        <div class="formula">
+          <i>a</i> = <span class="frac"><span>|Δ<i class="vec">v</i>|</span><span>Δ<i>t</i></span></span> =
+          <span class="frac"><span><i>v</i><sup>2</sup></span><span><i>r</i></span></span>.<span class="nr">(1.47)</span>
+        </div>
+        <p>
+          Vectorul accelerației, cu originea în poziția <i class="m">M</i><sub>0</sub> ocupată de mobil, este orientat
+          spre centrul cercului.
+        </p>
+        <div class="retine definitie">
+          Mărimea vectorială ce caracterizează variația direcției vectorului viteză într-o mișcare circulară uniformă
+          și este mereu orientată spre centrul cercului se numește <i>accelerație centripetă</i>.
+        </div>
+        <p>
+          Ea se notează cu <i class="m">a</i><sub>c</sub>. Avem
+          <i class="m">a</i><sub>c</sub> = <i class="m">v</i><sup>2</sup>/<i class="m">r</i>. (1.48)
+          Pornind de la expresiile (1.45) și (1.46) pentru viteza mobilului, transcriem expresia (1.48) astfel:
+        </p>
+        <div class="formula">
+          <i>a</i><sub>c</sub> = <span class="frac"><span>4π<sup>2</sup><i>r</i></span><span><i>T</i><sup>2</sup></span></span>
+          = 4π<sup>2</sup><i>ν</i><sup>2</sup><i>r</i>.<span class="nr">(1.49)</span>
+        </div>
+        <p>
+          Aceste relații arată că accelerația centripetă a punctului unui corp rigid ce se rotește este direct
+          proporțională cu distanța dintre punct și axa de rotație.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-centripeta" data-w="680" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Viteza unghiulară (fig. 1.44) -->
+  <section class="slide lectie">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Viteza unghiulară</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Când rigidul se rotește, într-un interval de timp Δ<i class="m">t</i> raza dusă de la axă spre fiecare punct
+          al lui se rotește cu același unghi Δ<i class="m">α</i> (fig. 1.44). Acest unghi, același pentru toate
+          punctele rigidului, este numit <b>unghi de rotație</b> sau <b>deplasare unghiulară</b> a rigidului.
+        </p>
+        <div class="retine definitie">
+          <i>Viteza unghiulară momentană ω</i> este o mărime fizică determinată cu raportul dintre unghiul de rotație
+          Δ<i class="m">α</i> și intervalul foarte mic de timp Δ<i class="m">t</i>:
+          <span class="relatie"><i class="m">ω</i> = <span class="frac"><span>Δ<i class="m">α</i></span><span>Δ<i class="m">t</i></span></span>.</span>
+          <span class="nr-text">(1.50)</span>
+        </div>
+        <p>
+          Viteza unghiulară <i class="m">ω</i> caracterizează rotația corpului rigid, adică mișcarea circulară a tuturor
+          punctelor sale.
+        </p>
+        <p>
+          Unghiurile de rotație se exprimă în <b>radiani (rad)</b> (unghiul central care sprijină un arc de lungime egală
+          cu raza cercului), deci viteza unghiulară se exprimă în rad/s. Radianul, ca raport al lungimilor arcului la
+          rază, este adimensional. La substituirea valorilor concrete ale vitezei unghiulare în formule termenul „rad”
+          se omite.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-cilindru" data-w="680" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Legătura dintre ω, T, ν, v și a_c -->
+  <section class="slide lectie">
+    <p class="tema">1.8 · Mișcarea curbilinie</p>
+    <h2>Viteza unghiulară, perioada și viteza liniară</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Putem stabili ușor relația dintre viteza unghiulară și perioada <i class="m">T</i>. Într-un interval de timp
+          de o perioadă, Δ<i class="m">t</i> = <i class="m">T</i>, unghiul de rotație al corpului
+          Δ<i class="m">α</i> = 2π. Substituind aceste valori în definiția (1.50), obținem
+        </p>
+        <div class="formula">
+          <i>ω</i> = <span class="frac"><span>2π</span><span><i>T</i></span></span> = 2π<i>ν</i>,<span class="nr">(1.51)</span>
+        </div>
+        <p>unde s-a ținut seama de relația (1.44).</p>
+        <p>
+          Pentru a nu confunda viteza unghiulară <i class="m">ω</i> cu viteza <i class="m">v</i> a unui punct al rigidului,
+          ultima este numită <b>viteză liniară</b>.
+        </p>
+        <p>
+          Formula (1.51) permite exprimarea vitezei liniare (1.46) și a accelerației centripete (1.48) prin viteza
+          unghiulară:
+        </p>
+        <div class="formula">
+          <i>v</i> = <i>ωr</i>, &nbsp;&nbsp; <i>a</i><sub>c</sub> = <i>ω</i><sup>2</sup><i>r</i>.<span class="nr">(1.52)</span>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-omega" data-w="680" data-h="560"></canvas>
+        <div class="control">
+          <label for="omega"><i class="m">ω</i>:</label>
+          <input type="range" id="omega" min="0.5" max="3" step="0.1" value="1.5">
+          <output id="omega-val">1,5 rad/s</output>
+        </div>
+        <div class="control">
+          <label for="raza"><i class="m">r</i>:</label>
+          <input type="range" id="raza" min="0.2" max="1" step="0.05" value="0.6">
+          <output id="raza-val">0,60 m</output>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../../../assets/deck/deck.js"></script>
+<script src="animatii.js"></script>
+</body>
+</html>

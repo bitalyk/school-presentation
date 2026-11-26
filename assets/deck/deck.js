@@ -311,9 +311,10 @@
     o = o || {};
     const m = o.marime || 24;
     const g = o.greutate || 600;
+    // tipuri: "i" variabilă în italic, "v" vector (italic cu săgeată deasupra), "sub" indice, "sup" exponent
     function fontParte(p) {
-      if (p[1] === "sub") return g + " " + Math.round(m * 0.62) + "px " + SANS;
-      if (p[1] === "i") return "italic 400 " + Math.round(m * 1.12) + "px " + SERIF;
+      if (p[1] === "sub" || p[1] === "sup") return g + " " + Math.round(m * 0.62) + "px " + SANS;
+      if (p[1] === "i" || p[1] === "v") return "italic 400 " + Math.round(m * 1.12) + "px " + SERIF;
       return g + " " + m + "px " + SANS;
     }
     let total = 0;
@@ -329,7 +330,18 @@
     ctx.fillStyle = o.culoare || "#1f2430";
     parti.forEach(function (p, i) {
       ctx.font = fontParte(p);
-      ctx.fillText(p[0], xx, p[1] === "sub" ? y + m * 0.24 : y);
+      ctx.fillText(p[0], xx, p[1] === "sub" ? y + m * 0.24 : p[1] === "sup" ? y - m * 0.42 : y);
+      if (p[1] === "v") {
+        const w = latimi[i], ys = y - m * 0.98, cap = m * 0.2;
+        const x1 = xx + w * 0.12, x2 = xx + w * 0.98 + m * 0.08;
+        ctx.save();
+        ctx.strokeStyle = ctx.fillStyle;
+        ctx.lineWidth = Math.max(1.2, m * 0.07);
+        ctx.beginPath(); ctx.moveTo(x1, ys); ctx.lineTo(x2 - cap * 0.5, ys); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x2, ys); ctx.lineTo(x2 - cap, ys - cap * 0.45); ctx.lineTo(x2 - cap, ys + cap * 0.45);
+        ctx.closePath(); ctx.fill();
+        ctx.restore();
+      }
       xx += latimi[i];
     });
     return total;

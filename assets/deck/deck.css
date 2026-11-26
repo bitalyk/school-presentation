@@ -481,3 +481,31 @@ body.roz .banda { background: linear-gradient(90deg, #a8205f 0%, #e0559c 42%, rg
 .optica .lista-parti li + li { margin-top: 4px; }
 .optica .indiciu { margin: 8px 0 0; font-size: 19px; color: var(--muted); text-align: center; }
 .optica .indiciu b { color: var(--warm); }
+
+/* ---------- clasa a 10-a: tema roșie (ca în manual), vectori, lecții cu desen alăturat ---------- */
+body.rosu { --warm: #cf2741; --warm-soft: #fde8eb; }
+body.rosu .banda { background: linear-gradient(90deg, #ad1c34 0%, #e3566b 42%, rgba(253, 229, 233, 0) 88%); }
+sup { font-size: 0.6em; line-height: 0; }
+/* vector: <i class="m vec">v</i> → litera cu săgeată deasupra */
+.vec { position: relative; display: inline-block; padding-right: 0.05em; }
+.vec::before { content: ""; position: absolute; left: 0.14em; right: 0.06em; top: 0.06em; border-top: 0.065em solid currentColor; }
+.vec::after { content: ""; position: absolute; right: -0.04em; top: -0.025em; border-left: 0.24em solid currentColor; border-top: 0.11em solid transparent; border-bottom: 0.11em solid transparent; }
+.lectie .coloane { grid-template-columns: 1fr auto; gap: 36px; align-items: start; }
+.lectie .col-text { gap: 14px; font-size: 22px; line-height: 1.42; }
+.lectie .col-text p { margin: 0; }
+.lectie .retine { margin-top: 12px; padding: 18px 24px 14px; font-size: 22px; }
+.lectie .formula { padding: 8px 20px; border-width: 2px; font-size: 30px; }
+.lectie .formula .nr { right: 18px; font-size: 20px; }
+.lectie .formula .frac { font-size: 0.78em; }
+.lectie .pasi li + li { margin-top: 8px; }
+.lectie .pasi li::marker { font-weight: 700; }
+.lectie .indiciu { margin: 6px 0 0; font-size: 19px; color: var(--muted); text-align: center; }
+.lectie .indiciu b { color: var(--warm); }
+.lectie .control { font-size: 21px; }
+.lectie .control output { min-width: 130px; font-variant-numeric: tabular-nums; }
+.lectie .mic { font-size: 19px; color: var(--muted); }
+.lectie .nr-text { float: right; margin-top: 0.5em; font-size: 20px; color: var(--muted); }
+.lectie.compact-text .col-text { gap: 10px; font-size: 20px; line-height: 1.36; }
+.lectie.compact-text .retine { margin-top: 12px; padding: 16px 22px 12px; font-size: 20px; }
+.lectie.compact-text .formula { padding: 4px 18px; font-size: 27px; }
+.nw { white-space: nowrap; }

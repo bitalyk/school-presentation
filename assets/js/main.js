@@ -45,7 +45,7 @@
         c.rel = "noopener";
       }
     }
-    c.appendChild(el("span", "prez-tip", link ? tip(link) : "În pregătire"));
+    c.appendChild(el("span", "prez-tip", link ? p.tip || tip(link) : "În pregătire"));
     c.appendChild(el("span", "prez-titlu", p.titlu || "Fără titlu"));
     if (p.descriere) c.appendChild(el("span", "prez-desc", p.descriere));
     return c;

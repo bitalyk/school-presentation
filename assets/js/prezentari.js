@@ -11,7 +11,8 @@
       capitol: "Mecanică",                                // opțional — grupează prezentările pe capitole
       descriere: "Viteza, legea mișcării, grafice.",      // opțional
       link: "prezentari/clasa-9/miscarea-uniforma.pdf",   // fișier local sau adresă web
-      data: "2026-11-24"                                  // opțional, format AAAA-LL-ZZ
+      data: "2026-11-24",                                 // opțional, format AAAA-LL-ZZ
+      tip: "Test"                                         // opțional — eticheta cardului (altfel se deduce din link)
     },
 
   Fără „link”, prezentarea apare ca „În pregătire”.
@@ -42,5 +43,28 @@ window.PREZENTARI = {
       data: "2026-11-24"
     },
   ],
-  "10": [],
+  "10": [
+    {
+      titlu: "1.7. e) Mișcarea corpului pe verticală",
+      capitol: "Capitolul 1",
+      descriere: "Bila și pana în aer și în vid; corpul aruncat vertical în sus cu graficele v(t) și y(t); cum se obțin formulele (1.39) și (1.40) din legile vectoriale.",
+      link: "prezentari/clasa-10/1-7-miscarea-pe-verticala/index.html",
+      data: "2026-11-26"
+    },
+    {
+      titlu: "1.8. Mișcarea curbilinie",
+      capitol: "Capitolul 1",
+      descriere: "Mișcarea circulară uniformă: viteza tangentă, perioada și frecvența, viteza liniară, accelerația centripetă și viteza unghiulară — cu animații.",
+      link: "prezentari/clasa-10/1-8-miscarea-curbilinie/index.html",
+      data: "2026-11-26"
+    },
+    {
+      titlu: "Evaluare sumativă nr. 1",
+      capitol: "Capitolul 1",
+      descriere: "4 probleme (2 + 2 + 3 + 3 = 10 puncte): viteza medie, accelerația, aruncarea pe verticală, viteza unghiulară. Foaie gata de tipărit A4 și barem de corectare.",
+      link: "prezentari/clasa-10/evaluare-sumativa-1/index.html",
+      data: "2026-11-26",
+      tip: "Test"
+    },
+  ],
 };

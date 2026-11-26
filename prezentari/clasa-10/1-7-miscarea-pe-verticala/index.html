@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1.7. e) Mișcarea corpului pe verticală — Fizică, clasa a 10-a</title>
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../assets/deck/deck.css">
+</head>
+<body class="rosu" data-inapoi="../../../clasa-10/index.html" data-inapoi-text="Clasa a 10-a">
+<main class="stage">
+
+  <!-- 1. Titlu -->
+  <section class="slide titlu" aria-label="Titlu">
+    <div class="banda">
+      <span class="cap">Capitolul</span><span class="cap-nr">1</span>
+    </div>
+    <div class="titlu-text">
+      <p class="tema-nr">1.7. Mișcarea rectilinie uniform variată. Accelerația</p>
+      <h1>e) Mișcarea corpului pe verticală</h1>
+      <p class="clasa">Fizică · Clasa a 10-a</p>
+    </div>
+    <canvas id="a-titlu" data-w="560" data-h="560" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- 2. Căderea în aer și în vid -->
+  <section class="slide lectie">
+    <p class="tema">1.7 · e) Mișcarea corpului pe verticală</p>
+    <h2>Căderea corpurilor în aer și în vid</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>Lăsăm să cadă în același moment, de la aceeași înălțime, o bilă și o pană.</p>
+        <p>
+          <b>În aer</b> bila ajunge repede jos, iar pana coboară încet, legănându-se.
+          <b>În vid</b> (aerul a fost evacuat din tub) bila și pana cad la fel și ajung jos în același timp.
+        </p>
+        <div class="retine">
+          În vid toate corpurile cad cu aceeași accelerație <i class="m vec">g</i>, orientată vertical în jos
+          (<i class="m">g</i> ≈ 9,8 m/s<sup>2</sup>). <b>Viteza corpului care cade nu depinde de masa lui.</b>
+        </div>
+        <p>
+          În aer asupra corpului acționează și <b>forța de rezistență a aerului</b>. Ea depinde de forma și de aria
+          suprafeței corpului și crește odată cu viteza. Pana are masă mică și suprafață mare: forța de rezistență
+          îi echilibrează repede greutatea, de aceea viteza penei crește foarte încet.
+        </p>
+        <p>
+          În vid acționează doar greutatea <i class="m">G</i> = <i class="m">mg</i>. Bila este atrasă mai puternic,
+          dar are și masă mai mare, de aceea viteza ei crește la fel de repede ca viteza penei.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-cadere" data-w="700" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Aruncarea pe verticală: fig. 1.36 și formulele (1.39), (1.40) -->
+  <section class="slide lectie">
+    <p class="tema">1.7 · e) Mișcarea corpului pe verticală</p>
+    <h2>Corpul aruncat vertical în sus</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Corpul este aruncat vertical în sus din punctul <i class="m">O</i> cu viteza inițială
+          <i class="m vec">v</i><sub>0</sub>. În tot timpul mișcării accelerația lui este <i class="m vec">g</i>,
+          orientată vertical în jos.
+        </p>
+        <p>
+          La urcare viteza scade. În punctul cel mai de sus, la înălțimea <i class="m">H</i><sub>max</sub>,
+          <i class="m">v<sub>y</sub></i> = 0. Apoi corpul cade înapoi, iar viteza lui crește.
+        </p>
+        <div class="formula"><i>v</i><sub>y</sub> = <i>v</i><sub>0</sub> − <i>gt</i>,<span class="nr">(1.39)</span></div>
+        <div class="formula">
+          <i>y</i> = <i>v</i><sub>0</sub><i>t</i> − <span class="frac"><span><i>gt</i><sup>2</sup></span><span>2</span></span>.<span class="nr">(1.40)</span>
+        </div>
+        <p class="mic">
+          La urcare <i class="m">v<sub>y</sub></i> &gt; 0; la coborâre <i class="m">v<sub>y</sub></i> &lt; 0 —
+          viteza este orientată opus axei <i class="m">Oy</i>.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-aruncare" data-w="860" data-h="600"></canvas>
+        <div class="control">
+          <label for="v0">Viteza inițială <i class="m">v</i><sub>0</sub>:</label>
+          <input type="range" id="v0" min="10" max="24.5" step="0.1" value="19.6">
+          <output id="v0-val">19,6 m/s</output>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. De la formele vectoriale la formulele scalare -->
+  <section class="slide lectie">
+    <p class="tema">1.7 · e) Mișcarea corpului pe verticală</p>
+    <h2>Cum am obținut formulele (1.39) și (1.40)</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Mișcarea pe verticală este o mișcare rectilinie uniform variată cu accelerația
+          <i class="m vec">a</i> = <i class="m vec">g</i>. Pornim de la legile ei scrise vectorial:
+        </p>
+        <div class="formula">
+          <i class="vec">v</i> = <i class="vec">v</i><sub>0</sub> + <i class="vec">g</i><i>t</i>; &nbsp;
+          <i class="vec">r</i> = <i class="vec">r</i><sub>0</sub> + <i class="vec">v</i><sub>0</sub><i>t</i> +
+          <span class="frac"><span><i class="vec">g</i><i>t</i><sup>2</sup></span><span>2</span></span>
+        </div>
+        <p>
+          Alegem originea <i class="m">O</i> în punctul de aruncare, axa <i class="m">Oy</i> vertical în sus și
+          axa <i class="m">Ox</i> orizontal. Proiectăm fiecare vector pe axe:
+        </p>
+        <ul class="pasi">
+          <li>
+            <b>Pe axa <i class="m">Ox</i></b>: pe orizontală asupra corpului nu acționează forțe, deci
+            <i class="m">g<sub>x</sub></i> = 0; corpul este aruncat vertical, deci <i class="m">v</i><sub>0<i>x</i></sub> = 0.
+            Rezultă <i class="m">v<sub>x</sub></i> = 0 și <i class="m">x</i> = 0 — corpul nu se deplasează pe orizontală.
+          </li>
+          <li>
+            <b>Pe axa <i class="m">Oy</i></b>: <i class="m vec">v</i><sub>0</sub> are sensul axei, deci
+            <i class="m">v</i><sub>0<i>y</i></sub> = <i class="m">v</i><sub>0</sub>; <i class="m vec">g</i> este orientat
+            opus axei <i class="m">Oy</i>, deci <i class="m">g<sub>y</sub></i> = −<i class="m">g</i>; <i class="m">y</i><sub>0</sub> = 0.
+          </li>
+        </ul>
+        <p>
+          Înlocuim proiecțiile în legile scrise pe axa <i class="m">Oy</i> și obținem formulele scalare (1.39) și (1.40).
+        </p>
+        <p class="mic">
+          Consecință: în punctul cel mai de sus <i class="m">v<sub>y</sub></i> = 0, de unde
+          <i class="m">t</i><sub>urc</sub> = <i class="m">v</i><sub>0</sub>/<i class="m">g</i> și
+          <i class="m">H</i><sub>max</sub> = <i class="m">v</i><sub>0</sub><sup>2</sup>/(2<i class="m">g</i>).
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-derivare" data-w="820" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../../../assets/deck/deck.js"></script>
+<script src="animatii.js"></script>
+</body>
+</html>
