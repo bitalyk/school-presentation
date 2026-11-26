@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>§ 2. Sistemul solar — Fizică, clasa a 9-a</title>
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../assets/deck/deck.css">
+</head>
+<body class="roz" data-inapoi="../../../clasa-9/index.html" data-inapoi-text="Clasa a 9-a">
+<main class="stage">
+
+  <!-- 1. Titlu -->
+  <section class="slide titlu" aria-label="Titlu">
+    <div class="banda">
+      <span class="cap">Capitolul</span><span class="cap-nr">2</span><span class="cap-titlu">INTERACȚIUNI PRIN CÎMPURI</span>
+    </div>
+    <div class="titlu-text">
+      <p class="tema-nr">§ 2</p>
+      <h1>Sistemul solar</h1>
+      <p class="clasa">Fizică · Clasa a 9-a</p>
+    </div>
+    <canvas id="a-titlu" data-w="560" data-h="560" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- 2. Sistemul solar: textul manualului -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Soarele și planetele</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          După cum cunoașteți, Soarele, cele opt planete* mari cu sateliții lor, cîteva planete pitice și un număr
+          mare de asteroizi, comete și meteoriți, praf și gaz cosmic formează <b><i>sistemul solar</i></b>. În raport
+          cu Soarele planetele mari se află în următoarea ordine: Mercur, Venus, Pămînt, Marte, Jupiter, Saturn,
+          Uranus, Neptun (fig. 1). Toate planetele efectuează o mișcare de revoluție în jurul Soarelui în același
+          sens (împotriva acelor ceasornicului, dacă privim de la Polul Nord al Terrei) pe orbite aproximativ
+          circulare, care se află în același plan (fig. 1).
+        </p>
+        <p>
+          <b><i>Soarele</i></b> este corpul central al sistemului nostru planetar, fiind cel mai mare corp al acestui
+          sistem. Masa lui este de 333 000 de ori mai mare decît masa Pămîntului și de 750 de ori mai mare decît suma
+          maselor tuturor planetelor. Masele tuturor planetelor alcătuiesc ~ 0,1 % din masa Soarelui.
+        </p>
+        <div class="retine definitie">
+          Distanța de la Pămînt pînă la Soare este de cca 150 000 000 km. Ea este considerată ca unitate de măsură,
+          numită <i>unitate astronomică</i> (1 u. a. = 150 000 000 km).
+        </div>
+        <p class="subsol">* Pînă în anul 2006 și Pluton era considerat planetă; astăzi el este o planetă pitică.</p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-sistem" data-w="640" data-h="600"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Desenul și realitatea -->
+  <section class="slide lectie lat">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Desenul și realitatea: mărimi și distanțe</h2>
+    <div class="coloane">
+      <div class="col-vis">
+        <canvas id="a-scara" data-w="1420" data-h="500"></canvas>
+        <div class="butoane" id="moduri-scara">
+          <button type="button" class="buton-mic" data-mod="0">Desen ilustrativ</button>
+          <button type="button" class="buton-mic" data-mod="1">Mărimile la scară</button>
+          <button type="button" class="buton-mic" data-mod="2">Distanțele la scară</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Planetele -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Planetele: telurice și gigante</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>Planetele sistemului solar se împart în două grupe.</p>
+        <p>
+          <b>Planetele telurice</b> (de tip terestru) — Mercur, Venus, Pămîntul și Marte — sînt cele mai apropiate
+          de Soare. Ele sînt mici, au o suprafață solidă din roci și metale și puțini sateliți sau niciunul.
+        </p>
+        <p>
+          <b>Planetele gigante</b> — Jupiter, Saturn, Uranus și Neptun — sînt mult mai mari și mai îndepărtate.
+          Ele sînt alcătuite mai ales din gaze (hidrogen, heliu) și gheață, nu au o suprafață solidă, au inele și
+          foarte mulți sateliți.
+        </p>
+        <p>Între orbitele lui Marte și Jupiter se află <b>centura de asteroizi</b>.</p>
+        <p class="indiciu" style="text-align: left">Faceți <b>clic pe o planetă</b> din șirul de sus.</p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-planete" class="interactiv" data-w="840" data-h="630"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Sateliții -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Sateliții planetelor</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          <b>Sateliții naturali</b> sînt corpuri cerești care se rotesc în jurul planetelor. Pămîntul are un singur
+          satelit — <b>Luna</b>, aflată la circa 384 000 km de el.
+        </p>
+        <p>
+          Mercur și Venus nu au sateliți, Marte are doi sateliți mici — Phobos și Deimos. Planetele gigante au
+          foarte mulți sateliți: Jupiter — peste 100, Saturn — peste 280, Uranus — 29, Neptun — 16. Numărul lor
+          crește, deoarece se descoperă mereu sateliți noi.
+        </p>
+        <p>
+          Cei mai mari sateliți sînt Ganimede (al lui Jupiter) și Titan (al lui Saturn) — amîndoi mai mari decît
+          planeta Mercur. Pe Io erup vulcani, sub gheața de pe Europa se află un ocean de apă, iar Titan are o
+          atmosferă densă.
+        </p>
+        <p>Cei patru sateliți mari ai lui Jupiter au fost descoperiți de Galileo Galilei în 1610.</p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-sateliti" data-w="760" data-h="610"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Planetele pitice -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Planetele pitice. Centura Kuiper</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>În anul 2006 astronomii au stabilit că <b>planeta pitică</b> este un corp ceresc care:</p>
+        <ul class="pasi">
+          <li>se rotește în jurul Soarelui;</li>
+          <li>are o masă destul de mare pentru ca propria gravitație să-i dea o formă aproape sferică;</li>
+          <li>nu a „curățat” vecinătatea orbitei sale de alte corpuri (spre deosebire de planete).</li>
+        </ul>
+        <p>
+          Astfel <b>Pluton</b>, descoperit în 1930 și socotit timp de 76 de ani a noua planetă, a devenit planetă
+          pitică. Diametrul lui este de 2 377 km (mai mic decît al Lunii), el face o rotație în jurul Soarelui în
+          248 de ani și are 5 sateliți.
+        </p>
+        <p>
+          Alte planete pitice: Ceres (în centura de asteroizi), Eris, Haumea și Makemake. Pluton, Haumea și
+          Makemake se află în <b>centura Kuiper</b> — o regiune de dincolo de Neptun (30–50 u. a.), cu mii de
+          corpuri mici de gheață; Eris este și mai departe.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-pitice" data-w="720" data-h="600"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Asteroizii -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Asteroizii</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          <b>Asteroizii</b> sînt corpuri cerești mici, solide, din roci și metale, care se rotesc în jurul
+          Soarelui. Cei mai mulți se află în <b>centura de asteroizi</b>, între orbitele lui Marte și Jupiter
+          (la 2,2–3,3 u. a. de Soare).
+        </p>
+        <p>
+          Se cunosc peste un milion de asteroizi. Cei mai mari sînt Ceres (≈ 940 km, astăzi planetă pitică),
+          Vesta (≈ 525 km) și Pallas (≈ 510 km), dar cei mai mulți au doar cîțiva kilometri sau chiar metri.
+          Masa tuturor asteroizilor din centură este de circa 30 de ori mai mică decît masa Lunii.
+        </p>
+        <p>
+          Asteroizii mici au o formă neregulată: gravitația lor este prea slabă ca să-i rotunjească.
+        </p>
+        <p>
+          Unii asteroizi au orbite care trec aproape de Pămînt. Se presupune că un asteroid cu diametrul de circa
+          10 km, căzut pe Pămînt acum 66 de milioane de ani, a dus la dispariția dinozaurilor.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-asteroizi" data-w="760" data-h="600"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Cometele -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Cometele</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          <b>Cometele</b> sînt corpuri mici alcătuite din gheață, praf și roci („bulgări de zăpadă murdari”). Ele
+          se mișcă în jurul Soarelui pe orbite foarte alungite.
+        </p>
+        <p>
+          <b>Nucleul</b> cometei are, de obicei, cîțiva kilometri. Cînd cometa se apropie de Soare, gheața se
+          evaporă și în jurul nucleului apare un nor luminos de gaz și praf — <b>coama</b> (capul cometei).
+          Lumina și vîntul solar împing gazul și praful, formînd <b>coada</b>, lungă de milioane de kilometri și
+          îndreptată întotdeauna în partea opusă Soarelui.
+        </p>
+        <p>
+          Cometele vin din regiunile cele mai îndepărtate ale sistemului solar — centura Kuiper și norul lui Oort.
+        </p>
+        <p>
+          Cea mai cunoscută este <b>cometa Halley</b>, care revine la fiecare circa 76 de ani: a fost văzută în
+          1986 și va reveni în 2061.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-comete" data-w="760" data-h="610"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Meteoroizi, meteori, meteoriți -->
+  <section class="slide lectie">
+    <p class="tema">§ 2 · Sistemul solar</p>
+    <h2>Meteoroizi, meteori și meteoriți</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          <b>Meteoroizii</b> sînt corpuri mici de rocă sau metal — de la grăunțe de praf pînă la cîțiva metri —
+          care se mișcă în spațiul interplanetar. Mulți sînt resturi de comete și asteroizi.
+        </p>
+        <p>
+          Cînd un meteoroid intră în atmosfera Pămîntului cu viteza de zeci de kilometri pe secundă, el se
+          încălzește puternic din cauza frecării cu aerul și arde, lăsînd pe cer o dîră luminoasă —
+          <b>meteorul</b> („stea căzătoare”). Meteorii apar la înălțimi de circa 70–120 km.
+        </p>
+        <p>
+          Cînd Pămîntul trece prin norul de particule lăsat de o cometă, se observă o <b>ploaie de meteori</b>,
+          de exemplu Perseidele, în fiecare august.
+        </p>
+        <p>
+          Corpurile mai mari, care nu ard complet și cad pe suprafața Pămîntului, se numesc <b>meteoriți</b>.
+          Cel mai mare meteorit găsit, Hoba (Namibia), are o masă de circa 60 t.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-meteori" data-w="760" data-h="610"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../../../assets/deck/deck.js"></script>
+<script src="animatii.js"></script>
+</body>
+</html>

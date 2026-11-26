@@ -509,3 +509,19 @@ sup { font-size: 0.6em; line-height: 0; }
 .lectie.compact-text .retine { margin-top: 12px; padding: 16px 22px 12px; font-size: 20px; }
 .lectie.compact-text .formula { padding: 4px 18px; font-size: 27px; }
 .nw { white-space: nowrap; }
+
+/* ---------- clasa a 9-a, capitolul 2: cursoare strânse, butoane de mod, liste în „Reține!” ---------- */
+.controale { display: grid; gap: 2px; margin-top: 4px; }
+.controale .control input[type="range"] { width: 300px; }
+.controale .control .buton-mic { margin-left: auto; }
+.butoane { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px; }
+.buton-mic.activ { background: var(--warm); border-color: var(--warm); color: #fff; }
+.retine .titlu-retine { display: block; margin-bottom: 8px; color: var(--ink); }
+.retine .puncte { margin: 0; }
+.retine .puncte li + li { margin-top: 6px; }
+.lectie .retine.mare { padding: 26px 30px 20px; font-size: 25px; line-height: 1.45; }
+.lectie .subsol { margin: 0; font-size: 16px; color: var(--muted); }
+.lectie .formula.mica { align-self: center; padding: 6px 26px; font-size: 26px; }
+.lectie.lat .coloane { grid-template-columns: 1fr; }
+.lectie.mare-text .col-text { font-size: 24px; }
+.lectie.mare-text .retine { font-size: 24px; }

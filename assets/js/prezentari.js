@@ -42,6 +42,20 @@ window.PREZENTARI = {
       link: "prezentari/clasa-9/1-6-instrumente-optice/index.html",
       data: "2026-11-24"
     },
+    {
+      titlu: "§ 1. Legea atracției universale",
+      capitol: "Capitolul 2. Interacțiuni prin cîmpuri",
+      descriere: "Forța gravitațională, formula legii cu exemple calculate (de la două bile pînă la Soare și Pămînt) și caracteristicile forțelor gravitaționale — cu animații și cursoare pentru mase și distanță.",
+      link: "prezentari/clasa-9/2-1-legea-atractiei-universale/index.html",
+      data: "2026-11-26"
+    },
+    {
+      titlu: "§ 2. Sistemul solar",
+      capitol: "Capitolul 2. Interacțiuni prin cîmpuri",
+      descriere: "Planetele în mișcare, desenul ilustrativ comparat cu mărimile și distanțele reale, fișe pentru fiecare planetă, sateliții, planetele pitice, asteroizii, cometele și meteorii.",
+      link: "prezentari/clasa-9/2-2-sistemul-solar/index.html",
+      data: "2026-11-26"
+    },
   ],
   "10": [
     {

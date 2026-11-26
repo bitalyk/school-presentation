@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>§ 1. Legea atracției universale — Fizică, clasa a 9-a</title>
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../assets/deck/deck.css">
+</head>
+<body class="roz" data-inapoi="../../../clasa-9/index.html" data-inapoi-text="Clasa a 9-a">
+<main class="stage">
+
+  <!-- 1. Titlu -->
+  <section class="slide titlu" aria-label="Titlu">
+    <div class="banda">
+      <span class="cap">Capitolul</span><span class="cap-nr">2</span><span class="cap-titlu">INTERACȚIUNI PRIN CÎMPURI</span>
+    </div>
+    <div class="titlu-text">
+      <p class="tema-nr">§ 1</p>
+      <h1>Legea atracției universale</h1>
+      <p class="clasa">Fizică · Clasa a 9-a</p>
+    </div>
+    <canvas id="a-titlu" data-w="560" data-h="560" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- 2. Forța gravitațională (fig. 1) -->
+  <section class="slide lectie mare-text">
+    <p class="tema">§ 1 · Legea atracției universale</p>
+    <h2>Forța gravitațională</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Toate corpurile din Univers se atrag unele pe altele. Două corpuri cu masele
+          <i class="m">m</i><sub>1</sub> și <i class="m">m</i><sub>2</sub>, aflate la distanța <i class="m">r</i>
+          unul de altul, acționează unul asupra celuilalt cu forțele <i class="m vec">F</i><sub>21</sub> și
+          <i class="m vec">F</i><sub>12</sub> (fig. 1). Aceste forțe sînt egale în modul și opuse ca sens:
+        </p>
+        <div class="formula mica"><i class="vec">F</i><sub>12</sub> = −<i class="vec">F</i><sub>21</sub></div>
+        <div class="retine">
+          <b><i>Forța gravitațională</i></b> ce acționează între două corpuri considerate punctiforme este direct
+          proporțională cu produsul maselor, invers proporțională cu pătratul distanței dintre ele și orientată
+          de-a lungul dreptei ce unește corpurile.
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-atractie" data-w="760" data-h="470"></canvas>
+        <div class="controale">
+          <div class="control">
+            <label for="m1"><i class="m">m</i><sub>1</sub>:</label>
+            <input type="range" id="m1" min="1" max="2" step="0.1" value="1">
+            <output id="m1-val">× 1</output>
+          </div>
+          <div class="control">
+            <label for="m2"><i class="m">m</i><sub>2</sub>:</label>
+            <input type="range" id="m2" min="1" max="2" step="0.1" value="1">
+            <output id="m2-val">× 1</output>
+          </div>
+          <div class="control">
+            <label for="dist"><i class="m">r</i>:</label>
+            <input type="range" id="dist" min="1" max="2" step="0.1" value="1">
+            <output id="dist-val">× 1</output>
+            <button type="button" class="buton-mic" id="demo">▶ Demonstrație</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Formula legii -->
+  <section class="slide lectie mare-text">
+    <p class="tema">§ 1 · Legea atracției universale</p>
+    <h2>Expresia matematică a legii</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Expresia matematică a forței de atracție gravitațională dintre două corpuri considerate punctiforme se
+          scrie astfel:
+        </p>
+        <div class="formula">
+          <i>F</i> = <i>γ</i> <span class="frac"><span><i>m</i><sub>1</sub><i>m</i><sub>2</sub></span><span><i>r</i><sup>2</sup></span></span>,<span class="nr">(1)</span>
+        </div>
+        <p>
+          unde <i class="m">m</i><sub>1</sub> și <i class="m">m</i><sub>2</sub> sînt masele corpurilor ce
+          interacționează, <i class="m">r</i> – distanța dintre ele; <i class="m">γ</i> - <b>constanta
+          gravitațională</b> („<i>gravitas</i>” – în limba latină înseamnă atracție).
+        </p>
+        <div class="formula mica">
+          <i>γ</i> = 6,67 · 10<sup>−11</sup> <span class="frac"><span>N · m<sup>2</sup></span><span>kg<sup>2</sup></span></span>.
+        </div>
+        <p>
+          Newton a constatat că după această formulă poate fi calculată forța de atracție dintre orice corpuri din
+          Univers. Din această cauză legea descoperită de el este numită <b><i>legea atracției universale</i></b>.
+        </p>
+        <p>
+          Corpuri ca Pămîntul, Luna, Soarele etc. pot fi considerate punctiforme în raport cu distanța dintre
+          <b>centrele lor</b>.
+        </p>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-exemple" class="interactiv" data-w="640" data-h="600"></canvas>
+        <p class="indiciu">Faceți <b>clic pe desen</b> pentru exemplul următor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Caracteristicile forțelor gravitaționale -->
+  <section class="slide lectie">
+    <p class="tema">§ 1 · Legea atracției universale</p>
+    <h2>Caracteristicile forțelor gravitaționale</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div class="retine mare">
+          <b class="titlu-retine">Caracteristicile de bază ale forțelor gravitaționale:</b>
+          <ul class="puncte">
+            <li>forțele gravitaționale sînt <b><i>forțe de atracție</i></b>;</li>
+            <li>
+              forțele gravitaționale sînt <b><i>„universale”</i></b>, deoarece mărimea fizică „masa” este specifică
+              fiecărei forme a materiei;
+            </li>
+            <li>
+              forțele gravitaționale sînt <b><i>esențiale</i></b> doar în cazul interacțiunii corpurilor cu mase mari
+              cum ar fi corpurile din Univers;
+            </li>
+            <li>
+              forțele gravitaționale acționează <b><i>la distanțe foarte mari</i></b> (infinite) și datorită lor toate
+              corpurile din Univers interacționează;
+            </li>
+            <li>forțele gravitaționale sînt <b><i>proporționale masei</i></b> corpurilor de care sînt create.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-distanta" data-w="640" data-h="590"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../../../assets/deck/deck.js"></script>
+<script src="animatii.js"></script>
+</body>
+</html>
