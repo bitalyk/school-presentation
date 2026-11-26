@@ -538,3 +538,22 @@ sup { font-size: 0.6em; line-height: 0; }
 .tabel-date tr > th:first-child { max-width: 250px; text-align: left; font-weight: 700; line-height: 1.25; background: var(--warm-soft); }
 .tabel-date td { font-weight: 700; font-variant-numeric: tabular-nums; }
 .lectie .formula.mica.cu-nr { padding-right: 76px; }
+
+/* ---------- clasa a 10-a, Unitatea II „Dinamica”: tema turcoaz, casete „Experiment” / „Este bine să știți” ---------- */
+body.turcoaz { --warm: #0f8a79; --warm-soft: #dcf2ee; }
+body.turcoaz .banda { background: linear-gradient(90deg, #0b7466 0%, #2bb5a0 42%, rgba(220, 242, 238, 0) 88%); }
+.retine.experiment { background: #ebf3fc; }
+.retine.experiment::before { content: "Experiment"; background: #4a8fd6; font-style: normal; }
+.retine.experiment b { color: #2a68ad; }
+.retine.stiti { background: #f1ecf8; }
+.retine.stiti::before { content: "Este bine să știți"; background: #8a6cc4; font-style: normal; }
+.retine.stiti b { color: #6a4ca6; }
+.retine[data-titlu]::before { content: attr(data-titlu); }
+.litera {
+  display: inline-grid; place-items: center; width: 1.1em; height: 1.1em; margin-right: 0.25em;
+  border-radius: 50%; background: var(--warm); color: #fff; font-size: 0.72em; vertical-align: 0.12em;
+}
+.col-vis .retine { width: 100%; }
+.col-vis .sub-canvas { margin: 0; font-size: 20px; line-height: 1.36; }
+.titlu h1.lung { font-size: 62px; line-height: 1.08; }
+.lectie .coloane.vis-lat { grid-template-columns: 1fr 640px; }

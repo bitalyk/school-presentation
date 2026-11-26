@@ -87,5 +87,19 @@ window.PREZENTARI = {
       data: "2026-11-26",
       tip: "Test"
     },
+    {
+      titlu: "2.1. Principiul inerției. Sisteme de referință inerțiale",
+      capitol: "Unitatea II. Dinamica",
+      descriere: "Bila pe lână, carton și sticlă, concluzia lui Galilei cu căruciorul, firul tăiat, inerția, principiul inerției și discul rotitor: sistem inerțial și neinerțial — cu animații.",
+      link: "prezentari/clasa-10/2-1-principiul-inertiei/index.html",
+      data: "2026-11-26"
+    },
+    {
+      titlu: "2.2. Principiul fundamental al dinamicii",
+      capitol: "Unitatea II. Dinamica",
+      descriere: "Masa (cărucioarele cu magneți, m₁/m₂ = a₂/a₁, aditivitatea), forța și dinamometrul, experimentul cu scripetele (a ~ F, a ~ 1/m), ma⃗ = F⃗, newtonul și rezultanta forțelor — cu animații.",
+      link: "prezentari/clasa-10/2-2-principiul-fundamental/index.html",
+      data: "2026-11-26"
+    },
   ],
 };

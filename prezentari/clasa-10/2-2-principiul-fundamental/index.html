@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2.2. Principiul fundamental al dinamicii — Fizică, clasa a 10-a</title>
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../assets/deck/deck.css">
+</head>
+<body class="turcoaz" data-inapoi="../../../clasa-10/index.html" data-inapoi-text="Clasa a 10-a">
+<main class="stage">
+
+  <!-- 1. Titlu -->
+  <section class="slide titlu" aria-label="Titlu">
+    <div class="banda">
+      <span class="cap">Unitatea</span><span class="cap-nr">II</span><span class="cap-titlu">DINAMICA</span>
+    </div>
+    <div class="titlu-text">
+      <p class="tema-nr">2.2</p>
+      <h1 class="lung">Principiul fundamental<br>al dinamicii</h1>
+      <p class="clasa">Fizică · Clasa a 10-a</p>
+    </div>
+    <canvas id="a-titlu" data-w="560" data-h="560" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- 2. a) Masa: cărucioarele cu magneți (fig. 2.5) -->
+  <section class="slide lectie compact-text">
+    <p class="tema">2.2 · Principiul fundamental al dinamicii</p>
+    <h2><span class="litera">a</span>Masa</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div class="retine experiment">
+          Două cărucioare se pot mișca rectiliniu pe o <b>suprafață ideală</b> (netedă: frecarea este neglijabilă).
+          Pe fiecare este fixat un magnet și un accelerometru. Cu polii de același nume unul spre altul, cărucioarele
+          se resping (fig. 2.5, <i>a</i>); cu polii de nume diferite, se atrag (fig. 2.5, <i>b</i>). Accelerațiile
+          se măresc sau se micșorează simultan, iar rapoartele lor sunt de fiecare dată egale:
+        </div>
+        <div class="formula mica cu-nr">
+          <span class="frac"><span><i>a</i><sub>2</sub></span><span><i>a</i><sub>1</sub></span></span> =
+          <span class="frac"><span><i>a</i>′<sub>2</sub></span><span><i>a</i>′<sub>1</sub></span></span> =
+          <span class="frac"><span><i>a</i>″<sub>2</sub></span><span><i>a</i>″<sub>1</sub></span></span> = … ,<span class="nr">(2.1)</span>
+        </div>
+        <p>
+          adică raportul accelerațiilor a două corpuri ce interacționează ia o valoare constantă, independentă de
+          caracterul interacțiunii lor. Despre corpul care a obținut o accelerație mai mică, adică se opune mai mult
+          variației vitezei sale, se spune că este <b>mai inert</b>. Această proprietate a corpurilor se
+          caracterizează printr-o mărime fizică scalară numită <b>masă</b>:
+        </p>
+        <div class="formula mica cu-nr">
+          <span class="frac"><span><i>m</i><sub>1</sub></span><span><i>m</i><sub>2</sub></span></span> =
+          <span class="frac"><span><i>a</i><sub>2</sub></span><span><i>a</i><sub>1</sub></span></span>.<span class="nr">(2.2)</span>
+        </div>
+        <div class="retine">
+          <b>Raportul maselor a două corpuri este egal cu raportul invers al accelerațiilor obținute de aceste corpuri
+          ca rezultat al interacțiunii dintre ele.</b>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-magneti" data-w="680" data-h="620"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Determinarea masei, proprietățile ei; forța și forța de greutate -->
+  <section class="slide lectie compact-text">
+    <p class="tema">2.2 · Principiul fundamental al dinamicii</p>
+    <h2>Determinarea masei. Forța</h2>
+    <div class="coloane vis-lat">
+      <div class="col-text">
+        <p>
+          Dacă determinăm accelerația <i class="m">a</i> a unui corp și accelerația <i class="m">a</i><sub>et</sub> a
+          etalonului de masă, obținute în urma interacțiunii dintre ele, atunci conform relației (2.2)
+          <span class="nw"><i class="m">m</i>/<i class="m">m</i><sub>et</sub> = <i class="m">a</i><sub>et</sub>/<i class="m">a</i></span>.
+          Prin urmare, masa corpului
+        </p>
+        <div class="formula mica cu-nr">
+          <i>m</i> = <span class="frac"><span><i>a</i><sub>et</sub></span><span><i>a</i></span></span> · <i>m</i><sub>et</sub>.<span class="nr">(2.3)</span>
+        </div>
+        <p>
+          Etalonul de masă este un cilindru cu diametrul și înălțimea de 39&nbsp;mm, dintr-un aliaj de platină (90%)
+          și iridiu (10%); masa lui este unitatea de masă – <b>kilogramul</b> (kg). Din 2019 kilogramul este definit
+          prin constanta lui Planck. Masele corpurilor macroscopice se determină cel mai des prin <b>cântărire</b>,
+          comparând acțiunile Pământului asupra lor.
+        </p>
+        <div class="retine stiti">
+          <b>1. Aditivitatea.</b> Corpul format din corpurile de mase <i class="m">m</i><sub>1</sub>,
+          <i class="m">m</i><sub>2</sub>, …, <i class="m">m</i><sub>n</sub> are masa
+          <span class="nw"><i class="m">m</i> = <i class="m">m</i><sub>1</sub> + <i class="m">m</i><sub>2</sub> + … + <i class="m">m</i><sub>n</sub></span>&nbsp;(2.4)
+          (lat. <i>additivus</i> „obținut prin adunare”).<br>
+          <b>2.</b> În mecanică masa este o mărime <b>constantă</b>, independentă de sistemul de referință – la
+          viteze mult mai mici decât viteza luminii în vid <span class="nw"><i class="m">c</i> = 300&nbsp;000&nbsp;km/s</span>.
+        </div>
+      </div>
+      <div class="col-vis">
+        <div class="retine definitie">
+          Mărimea fizică ce caracterizează cantitativ acțiunea unui corp asupra altuia se numește <b>forță</b>
+          (se notează, de obicei, cu <i class="m vec">F</i>). Forța este determinată de <b>punctul ei de aplicație</b>
+          (de corpul asupra căruia ea acționează), <b>de modul, direcție și sens</b>, deci este o mărime vectorială.
+          Dreapta pe care este situat vectorul forței se numește <b>dreaptă-suport</b>.
+        </div>
+        <p class="sub-canvas">Unitatea de forță în SI este <b>newtonul</b> (N).</p>
+        <div class="retine definitie">
+          Forța ce acționează asupra corpului aflat în vecinătatea Pământului din partea acestuia și-i imprimă
+          accelerația gravitațională se numește <b>forță de greutate</b> (se notează cu <i class="m vec">G</i>).
+        </div>
+        <canvas id="a-cantar" data-w="600" data-h="240"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. b) Forța: resortul (fig. 2.6), forța elastică, dinamometrul (fig. 2.7) -->
+  <section class="slide lectie compact-text">
+    <p class="tema">2.2 · Principiul fundamental al dinamicii</p>
+    <h2><span class="litera">b</span>Forța</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          În urma interacțiunii dintre corpuri, acestea capătă accelerații. Dacă un corp se mișcă cu accelerație,
+          aceasta este determinată de acțiunea unui alt corp (sau a altor corpuri) asupra lui.
+        </p>
+        <div class="retine experiment" data-titlu="Exemplu">
+          Un resort are capătul superior fixat. Notăm cu <i class="m">l</i><sub>0</sub> lungimea lui în stare
+          nedeformată (fig. 2.6, <i>a</i>). La suspendarea unui corp, lungimea resortului crește cu
+          Δ<i class="m">l</i> (fig. 2.6, <i>b</i>). Corpul se află în repaus, deci acțiunea Pământului asupra lui este
+          echilibrată de acțiunea resortului deformat.
+        </div>
+        <p>
+          Asupra corpului acționează forța de greutate <i class="m vec">G</i>, iar din partea resortului deformat – o
+          forță <i class="m vec">F</i> orientată vertical în sus, numită <b>forță elastică</b>:
+          <span class="nw"><i class="m vec">F</i> + <i class="m vec">G</i> = 0</span>. Aceste două forțe au module
+          egale, aceeași dreaptă-suport și sensuri opuse. Corpurile pot fi considerate puncte materiale, de aceea
+          forțele se reprezintă cu un punct comun de aplicație.
+        </p>
+        <p>
+          Resortul elastic este partea principală a <b>dinamometrului</b> (fig. 2.7) – dispozitiv pentru măsurarea
+          forțelor; pe scara lui sunt indicate în newtoni valorile forțelor.
+        </p>
+        <div class="retine">
+          Forța este o mărime fizică vectorială caracterizată de <b>punctul de aplicație</b>, de <b>modul</b>, de
+          <b>direcție</b> și <b>sens</b>. Acționând asupra corpului, forța îi imprimă <b>accelerație</b> sau îl
+          <b>deformează</b>. Forța este determinată de două corpuri: de corpul asupra căruia ea acționează și de corpul
+          ce acționează cu această forță.
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-resort" data-w="560" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. c) Principiul fundamental al dinamicii: căruciorul, firul și scripetele (fig. 2.8) -->
+  <section class="slide lectie compact-text">
+    <p class="tema">2.2 · Principiul fundamental al dinamicii</p>
+    <h2><span class="litera">c</span>Principiul fundamental al dinamicii</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <div class="retine experiment">
+          Un cărucior se mișcă pe o masă orizontală netedă; firul ideal trece peste un <b>scripete ideal</b>. Pe
+          cărucior se află câteva corpuri identice. Suspendăm un corp de capătul firului (fig. 2.8, <i>a</i>): sub
+          acțiunea forței de greutate <i class="m">G</i> căruciorul capătă accelerația <i class="m vec">a</i><sub>1</sub>.
+          Mutăm încă un corp de pe cărucior la capătul firului (fig. 2.8, <i>b</i>): masa sistemului rămâne aceeași,
+          forța devine 2<i class="m">G</i>, iar <span class="nw"><i class="m">a</i><sub>2</sub> = 2<i class="m">a</i><sub>1</sub></span>.
+        </div>
+        <p>
+          Accelerația unui corp de masă constantă este direct proporțională cu forța:
+          <span class="nw"><b><i class="m">a</i> ~ <i class="m">F</i></b> (pentru <i class="m">m</i> = const.)</span>.
+          Dacă alăturăm un cărucior identic, masa sistemului se dublează și accelerația devine de două ori mai mică:
+          <span class="nw"><b><i class="m">a</i> ~ 1/<i class="m">m</i></b> (pentru <i class="m">F</i> = const.)</span>.
+          Prin urmare,
+          <span class="nw"><i class="m">a</i> ~ <i class="m">F</i>/<i class="m">m</i></span> sau
+          <span class="nw"><i class="m">ma</i> ~ <i class="m">F</i></span>. În SI coeficientul de proporționalitate
+          este egal cu unitatea:
+        </p>
+        <div class="formula mica cu-nr"><i>ma</i> = <i>F</i>.<span class="nr">(2.5)</span></div>
+        <p>Forța și accelerația sunt mărimi vectoriale, au aceeași direcție și sens:</p>
+        <div class="formula mica cu-nr"><i>m</i><i class="vec">a</i> = <i class="vec">F</i>.<span class="nr">(2.6)</span></div>
+        <div class="retine">
+          <b>Produsul dintre masa corpului și accelerația lui este egal cu forța care imprimă corpului această
+          accelerație.</b>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-scripete" data-w="700" data-h="640"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Principiul al doilea al dinamicii; newtonul; rezultanta forțelor -->
+  <section class="slide lectie compact-text">
+    <p class="tema">2.2 · Principiul fundamental al dinamicii</p>
+    <h2>Principiul al doilea al dinamicii</h2>
+    <div class="coloane">
+      <div class="col-text">
+        <p>
+          Relația (2.6) exprimă principiul fundamental al dinamicii, numit și <b>principiul al doilea al
+          dinamicii</b>. Cunoscând mișcarea corpului, putem determina forța și invers. Pentru
+          <i class="m">m</i> = 1&nbsp;kg și <i class="m">a</i> = 1&nbsp;m/s² obținem unitatea de forță:
+        </p>
+        <div class="formula mica">
+          [<i>F</i>] = [<i>m</i>]·[<i>a</i>] = <span class="frac"><span>kg · m</span><span>s<sup>2</sup></span></span> = N.
+        </div>
+        <div class="retine definitie">
+          <b>Newtonul</b> este forța care imprimă corpului cu masa de 1&nbsp;kg o accelerație egală cu 1&nbsp;m/s².
+        </div>
+        <p>
+          Principiul fundamental este aplicabil numai în <b>sisteme inerțiale</b> de referință. Pentru
+          <span class="nw"><i class="m vec">F</i> = 0</span> obținem <span class="nw"><i class="m vec">a</i> = 0</span>,
+          adică <span class="nw"><i class="m vec">v</i> = const.</span>: primul și al doilea principiu nu se contrazic.
+        </p>
+        <p>
+          Dacă asupra corpului acționează mai multe forțe, accelerația este determinată de <b>rezultanta</b> lor
+          <span class="nw"><i class="m vec">F</i> = <i class="m vec">F</i><sub>1</sub> + <i class="m vec">F</i><sub>2</sub> + … + <i class="m vec">F</i><sub>n</sub></span>:
+        </p>
+        <div class="formula mica cu-nr">
+          <i>m</i><i class="vec">a</i> = <i class="vec">F</i><sub>1</sub> + <i class="vec">F</i><sub>2</sub> + … + <i class="vec">F</i><sub>n</sub>.<span class="nr">(2.7)</span>
+        </div>
+        <div class="retine">
+          <b>Produsul dintre masa și accelerația corpului este egal cu rezultanta tuturor forțelor care acționează
+          asupra lui și-i imprimă această accelerație.</b>
+        </div>
+      </div>
+      <div class="col-vis">
+        <canvas id="a-rezultanta" data-w="600" data-h="620"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../../../assets/deck/deck.js"></script>
+<script src="animatii.js"></script>
+</body>
+</html>
