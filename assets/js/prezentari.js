@@ -33,6 +33,13 @@ window.PREZENTARI = {
       link: "prezentari/clasa-8/2-2-caldura-specifica/index.html",
       data: "2026-11-24"
     },
+    {
+      titlu: "2.3. Călduri latente",
+      capitol: "Capitolul 2. Fenomene termice",
+      descriere: "Topirea gheții cu graficul t(τ), rețeaua cristalină care se distruge și se refă, Q = λt·m și tabelul căldurilor latente, evaporarea alcoolului, fierberea apei și condensarea — cu animații.",
+      link: "prezentari/clasa-8/2-3-calduri-latente/index.html",
+      data: "2026-11-26"
+    },
   ],
   "9": [
     {

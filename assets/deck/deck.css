@@ -525,3 +525,16 @@ sup { font-size: 0.6em; line-height: 0; }
 .lectie.lat .coloane { grid-template-columns: 1fr; }
 .lectie.mare-text .col-text { font-size: 24px; }
 .lectie.mare-text .retine { font-size: 24px; }
+
+/* ---------- clasa a 8-a, tema 2.3: „Definiții”, sub-liste, tabel de date sub coloane ---------- */
+.retine.definitii::before { content: "Definiții"; }
+.pasi .liniute { margin: 2px 0 0; padding-left: 1.1em; list-style: "– "; }
+.pasi .liniute li + li { margin-top: 0; }
+.lista-q { padding-left: 1.1em; }
+.sub-tabel { margin: auto 0 6px !important; font-size: 19px; color: var(--muted); }
+.tabel-date { width: 100%; border-collapse: collapse; font-size: 19px; text-align: center; background: var(--card); }
+.tabel-date th, .tabel-date td { padding: 5px 8px; border: 1.5px solid var(--line); }
+.tabel-date tr:first-child th { background: var(--warm-soft); font-weight: 700; }
+.tabel-date tr > th:first-child { max-width: 250px; text-align: left; font-weight: 700; line-height: 1.25; background: var(--warm-soft); }
+.tabel-date td { font-weight: 700; font-variant-numeric: tabular-nums; }
+.lectie .formula.mica.cu-nr { padding-right: 76px; }
